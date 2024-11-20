@@ -13,6 +13,24 @@
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  
+
+  .contato-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f5f9; /* Fundo escuro elegante */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark-mode .contato-page {
+    background-color: black;
   }
 
 
@@ -31,12 +49,21 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
+
+  .dark-mode #btnLink {
+    background-color: #f0f5f9;
+    color: black;
+  }
   
   #btnLink:hover {
     background-color: #6d1414;
     transform: scale(1.05);
   }
-  
+
+  .dark-mode #btnLink:hover {
+    background-color: #ff4040;
+  }
+
   /* Main Section */
   .main-content {
     flex: 1;
@@ -55,12 +82,21 @@
     width: 100%;
     max-width: 600px;
   }
+
+  .dark-mode .form-section {
+    background-color: black;
+  }
   
   .form-heading {
     text-align: center;
     margin-bottom: 20px;
     color: #1b4f72;
     font-size: 24px;
+  }
+
+  .dark-mode .form-heading {
+    background-color: black;
+    color: #f0f5f9;
   }
   
   /* Formulário */
@@ -80,6 +116,10 @@
     margin-bottom: 5px;
     font-weight: bold;
     color: #1b4f72;
+  }
+
+  .dark-mode .form-group label {
+    color: #f0f5f9;
   }
   
   input[type="text"], 
@@ -113,6 +153,10 @@
     font-size: 16px;
     color: #1b4f72;
   }
+
+  .dark-mode legend {
+    color: #f0f5f9;
+  }
   
   .submit-button {
     background-color: #1b4f72;
@@ -129,3 +173,19 @@
     background-color: #14405a;
   }
   
+
+  .dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 1000;
+    
+  }
+  
+  .dark-mode-toggle:hover {
+    transform: scale(1.1);
+  }

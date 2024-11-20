@@ -7,10 +7,19 @@
   <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body onload="disableScroll(), scrollinicio()">
+  <!-- Ícone de alternância para o Modo Escuro -->
+  <img 
+    src="IMGS/Luaescura.svg" 
+    alt="Alternar modo escuro" 
+    class="dark-mode-toggle"
+    id="icone-modo-claro"
+    onclick="toggleDarkMode()"
+  >
+
   <!-- Seção de Introdução -->
   <section class="hero">
     <div class="logo-container">
-      <img src="IMGS/LogoONG.svg" alt="Logo da Instituição" class="logo">
+      <img src="IMGS/LogoONG.svg" id="logo-img" alt="Logo da Instituição" class="logo">
       <button class="scroll-button" onclick="scrollToNextSection(), enableScroll()"> 
         &#x21E3;
       </button>
@@ -31,31 +40,28 @@
     <h2>Bem-vindo ao <span class="highlight">Blind</span></h2>
     <p>Explore nossos projetos e conheça mais sobre nossa missão.</p>
   </section>
-  
-  
 
   <section class="projetos full-height" id="projetos">
     <div class="teste">
-        <h2>Explore nossos Projetos</h2>
-        <div class="projetos-container">
+      <h2>Explore nossos Projetos</h2>
+      <div class="projetos-container">
         <a href="HTML/cardapio.html" class="projeto">
-            <img src="IMGS/FotoCardapioBraile.svg" alt="Cardápios em Braile" />
-            <h3>Cardápios em Braile</h3>
+          <img src="IMGS/FotoCardapioBraile.svg" alt="Cardápios em Braile" />
+          <h3>Cardápios em Braile</h3>
         </a>
         <a href="HTML/mobilidade.html" class="projeto">
-            <img src="IMGS/FotoCardapioBraile.svg" alt="Mobilidade Urbana" />
-            <h3>Mobilidade Urbana</h3>
+          <img src="IMGS/FotoCardapioBraile.svg" alt="Mobilidade Urbana" />
+          <h3>Mobilidade Urbana</h3>
         </a>
         <a href="HTML/esporte.html" class="projeto">
-            <img src="IMGS/FotoCardapioBraile.svg" alt="Goalball" />
-            <h3>Goalball</h3>
+          <img src="IMGS/FotoCardapioBraile.svg" alt="Goalball" />
+          <h3>Goalball</h3>
         </a>
+      </div>
     </div>
   </section>
-  
 
   <script src="JS/index.js"></script>
 
-  
 </body>
 </html>

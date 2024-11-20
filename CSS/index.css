@@ -11,6 +11,7 @@ body {
   color: 333;
   scroll-behavior: smooth;
   margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
@@ -22,6 +23,11 @@ body {
   align-items: center;
   background-color: #fafae7; /* Fundo escuro elegante */
   text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .hero {
+  background-color: black;
 }
 
 .logo-container {
@@ -47,10 +53,21 @@ body {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.dark-mode .scroll-button {
+  color: #fafae7;
+  border: 2px solid #fafae7;
+  background-color: transparent;
+}
+
 .scroll-button:hover {
   background-color: #1f2833;
   color: #fafae7;
   transform: scale(1.1);
+}
+
+.dark-mode .scroll-button:hover{
+  background-color: #fafae7;
+  color: black;
 }
 
 /* Main Content Section */
@@ -90,12 +107,21 @@ nav {
   color: #fff;
 }
 
+.dark-mode .nav-menu li a:hover{
+  background-color: #fafae7;
+  color: black;
+}
+
 h2 {
   font-size: 3rem;
   font-weight: 700;
   color: #494949;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   margin-top: 40px;
+}
+
+.dark-mode h2 {
+  color: #fafae7;
 }
 
 p {
@@ -107,9 +133,17 @@ p {
   margin: 20px auto 0;
 }
 
+.dark-mode p {
+  color: #fafae7;
+}
+
 .highlight {
   color: #6d1414;
   font-weight: bold;
+}
+
+.dark-mode .highlight {
+  color: #ff4040;
 }
 
 button {
@@ -125,9 +159,18 @@ button {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.dark-mode button {
+  background-color: #fafae7;
+  color: black;
+}
+
 button:hover {
   background-color: #6d1414;
   transform: scale(1.05);
+}
+
+.dark-mode button:hover {
+  background-color: #ff4040;
 }
 
 .main-content {
@@ -139,9 +182,12 @@ button:hover {
   justify-content: center;
   align-items: center;
   background-color: #fdfdf3;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
+.dark-mode .main-content {
+  background-color: rgb(31, 31, 31);
+}
 
 
 
@@ -154,6 +200,11 @@ button:hover {
   justify-content: center;
   align-items: center;
   background-color: #fafae7;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .full-height + section {
+  background-color: black;
 }
 
 
@@ -213,6 +264,11 @@ button:hover {
   margin-bottom: 40px;
 }
 
+
+.dark-mode .projetos h2 {
+  color: #fafae7;
+}
+
 .projetos-container {
   display: flex;
   flex-direction: row;
@@ -229,6 +285,10 @@ button:hover {
   text-align: center;
   width: 300px;
   transition: transform 0.3s ease;
+}
+
+.dark-mode .projeto {
+  color: #fafae7;
 }
 
 .projeto img {
@@ -252,3 +312,34 @@ button:hover {
   transform: translateY(-5px);
 }
 
+
+
+
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+
+
+.dark-mode .nav-bar a {
+  color: #ffffff;
+}
+
+/* Ícone de alternância para o Modo Escuro */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 1000;
+  
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
