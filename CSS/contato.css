@@ -61,7 +61,8 @@
   }
 
   .dark-mode #btnLink:hover {
-    background-color: #ff4040;
+    background-color: #14405a;
+    color: #f0f5f9;
   }
 
   /* Main Section */
@@ -84,7 +85,9 @@
   }
 
   .dark-mode .form-section {
-    background-color: black;
+    background-color: rgb(28, 27, 27);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    
   }
   
   .form-heading {
@@ -95,7 +98,7 @@
   }
 
   .dark-mode .form-heading {
-    background-color: black;
+    background-color: rgb(28, 27, 27);
     color: #f0f5f9;
   }
   
