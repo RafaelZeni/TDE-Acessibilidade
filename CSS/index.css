@@ -1,130 +1,254 @@
-/* Reset básico */
-body, h2, ul, li, p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
-    margin: 0;
-  }
-  
-  /* Header */
-  .header {
-    background-color: #002b47;
-    color: white;
-    padding: 1rem;
-  }
-  
-  .navigation .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .nav-link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main content */
-  .main-content {
-    padding: 2rem;
-    text-align: center;
-    flex: 1;
-  }
-  
-  .gallery-heading {
-    margin-bottom: 1rem;
-    color: #004d7a;
-  }
-  
-  .image-container {
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-  }
-  
-  .image-item {
-    text-align: center;
-  }
-  
-  .image-title {
-    font-size: 1.2rem;
-    color: #004d7a;
-    margin-bottom: 0.5rem;
-  }
-  
-  .gallery-image {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  
-  .gallery-image:hover {
-    transform: scale(1.05);
-  }
-  
+  /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .logo-container {
-    text-align: center; /* Centraliza a logo horizontalmente */
-    height: 120px; /* Altura fixa do espaço da logo */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 65px; /* Espaço entre a logo e as imagens acima */
-    margin-bottom: 35px; /* Espaço entre a logo e o footer */
-  
-  }
-  
-  .site-logo {
-    max-width: 250px; /* Ajuste conforme o tamanho desejado da logo */
-    height: auto; /* Mantém a proporção da logo */
-  }
-  
-  
-  
-  /* Footer */
-  .footer {
-    background-color: #002b47;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-  }
-  
-  .footer-navigation .footer-nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .footer-nav-link {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer-nav-link:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-text {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-  }
-  
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafae7;
+  color: 333;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+
+/* Seção Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafae7; /* Fundo escuro elegante */
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.scroll-button {
+  background-color: transparent;
+  border: 2px solid #1f2833;
+  border-radius: 50%;
+  color: #1f2833;
+  font-size: 24px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #1f2833;
+  color: #fafae7;
+  transform: scale(1.1);
+}
+
+/* Main Content Section */
+/* Manter seção main-content ocupando o tamanho da tela inteira */
+
+
+/* Garantir espaçamento e centralização dos elementos internos */
+
+
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: transparent; /* Torna o menu parte do fundo inicial */
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin: 0 15px;
+  list-style: none;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  padding: 8px 15px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  background-color: #1f2833;
+  color: #fff;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #494949;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.8;
+  margin: 20px auto 0;
+}
+
+.highlight {
+  color: #6d1414;
+  font-weight: bold;
+}
+
+button {
+  background-color: #1f2833; /* Botão destacado */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #6d1414;
+  transform: scale(1.05);
+}
+
+.main-content {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh; /* Garante que a altura seja sempre total */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfdf3;
+}
+
+
+
+
+
+
+
+
+.full-height + section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafae7;
+}
+
+
+
+.nav {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #ff5e57;
+  transition: background 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #ff4040;
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
+.projetos {
+  background-color: #f5f5dc; /* Tons claros para destacar conteúdo */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.teste {
+  display: flex;
+  flex-direction: column;
+}
+
+.projetos h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.projetos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px; /* Espaçamento entre as imagens */
+  flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
+  margin-top: 20px;
+}
+
+.projeto {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.projeto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.projeto h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.projeto:hover img {
+  transform: scale(1.05);
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+}
+
