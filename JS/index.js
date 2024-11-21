@@ -56,10 +56,10 @@ function toggleDarkMode() {
     const logo = document.getElementById('logo-img');
 
     if (isDarkMode) {
-      iconemodoclaro.src = '../IMGS/Luaclara.svg';
+      iconemodoclaro.src = 'IMGS/Luaclara.svg';
       logo.src = 'IMGS/Logo Instituto Escura.svg';
     } else {
-      iconemodoclaro.src = '../IMGS/Luaescura.svg';
+      iconemodoclaro.src = 'IMGS/Luaescura.svg';
       logo.src = 'IMGS/LogoONG.svg';
     }
 }
