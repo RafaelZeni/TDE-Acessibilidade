@@ -46,7 +46,7 @@ window.onload = function() {
   };
 
 
-function toggleDarkMode() {
+function toggleDarkModeHome() {
     document.body.classList.toggle('dark-mode');
     
     const isDarkMode = document.body.classList.contains('dark-mode');
