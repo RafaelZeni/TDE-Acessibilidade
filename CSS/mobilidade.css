@@ -1,0 +1,177 @@
+/* Estilo global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafae7;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  
+  
+  /* Cabeçalho com botão de voltar */
+  .header {
+    background-color: #fafae7; /* Mesmo fundo do site */
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark-mode .header {
+    background-color: rgb(31, 31, 31);
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dark-mode .back-button {
+    background-color: #fafae7;
+    color: #333;
+  }
+  
+  .back-button:hover {
+    background-color: #555;
+  }
+
+  .dark-mode .back-button:hover{
+    background-color: #fafae7b8;
+  }
+  
+  /* Seção do artigo */
+  .article-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    background-color: #fafae7;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark-mode .article-section {
+    background-color: rgb(31, 31, 31);
+  }
+  
+  .article-container {
+    width: 60%;
+    max-width: 800px;
+    padding: 20px;
+    border-left: 2px solid #ccc; /* Linha lateral esquerda */
+    border-right: 2px solid #ccc; /* Linha lateral direita */
+    background-color: #fafae7; /* Fundo branco para destaque */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: justify;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .article-container img {
+    display: block; /* Para que não tenha espaçamento indesejado */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    max-width: 100%; /* Ajusta a largura da imagem ao tamanho da tela */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  
+
+  .dark-mode .article-container {
+    background-color: rgb(31, 31, 31);
+  }
+
+
+
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #444;
+  }
+
+  .dark-mode h1 {
+    color: #fafae7;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  .dark-mode p {
+    color: white;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #444;
+  }
+
+  .dark-mode h3 {
+    color: #fafae7;
+  }
+
+  
+
+  
+  .button-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .audio-button {
+    padding: 10px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+
+  .stop-button {
+    padding: 10px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .audio-button:hover {
+    background-color: #0056b3;
+  }
+
+  .stop-button:hover {
+    background-color: #b30000;
+  }
+  
+  
+
+  .dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 1000;
+    
+  }
+  
+  .dark-mode-toggle:hover {
+    transform: scale(1.1);
+  }

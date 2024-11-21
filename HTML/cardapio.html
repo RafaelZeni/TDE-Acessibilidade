@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artigo</title>
+  <link rel="stylesheet" href="../CSS/cardapio.css">
+</head>
+<body>
+    <img 
+  src="../IMGS/Luaescura.svg" 
+  alt="Alternar modo escuro" 
+  class="dark-mode-toggle"
+  id="icone-modo-claro"
+  onclick="toggleDarkMode()"
+>
+
+  <!-- Botão para voltar à home -->
+  <header class="header">
+    <button onclick="goToSection()" class="back-button">Voltar para Home</button>
+  </header>
+  
+  <!-- Área de texto do artigo -->
+  <section class="article-section">
+    <div class="article-container">
+      <h1 id="title">Cardápio em Braile: promova a autonomia</h1>
+      <p id="firstpar">
+        Ao investir neste tipo de menu, você facilita os pedidos dos clientes que não podem enxergar. Mais do que isso, você os inclui dentro do contexto do estabelecimento, onde ele poderá ter livre acesso aos valores dos pratos e produtos oferecidos, por exemplo.
+      </p>
+      <img src="../IMGS/FotoCardapioBraile.svg" alt="">
+      <p>
+        Um restaurante, por exemplo, que não se preocupa com esta questão, demonstra claramente que está restringindo seu público, dificultando a inclusão e a independência dos clientes.
+      </p>
+      <p>
+        Trata-se, portanto, de um simples gesto de cuidado com as pessoas, que fará diferença tanto para o cliente, que falará bem do estabelecimento e se sentirá bem-vinda, quanto para o empresário, que estará cumprindo seu papel de cidadania e de empreendedor.
+      </p>
+      <h3>
+        Cardápio em Braile: item obrigatório
+      </h3>
+      <p>
+        Além de passar boa impressão para seu espaço, adotar o menu com a linguagem em braile é obrigatório, segundo a lei 12.363/97 em regulamentação ao decreto municipal nº 36.999/9.
+      </p>
+      <p>
+        O responsável pelo estabelecimento que não cumprir as recomendações da lei é submetido às sanções legais, o que abala profundamente a reputação da empresa em questão.
+      </p>
+      <p style="font-weight: bold;">
+        Portanto, não perca tempo, se adeque à lei e dê atenção ao seu público, invista no menu codificado em braile, confeccionado pela Menuart.
+      </p>
+    </div>
+
+    <div class="button-container">
+        <button onclick="acc_audio()" id="audio-button" class="audio-button">Audio Descritivo</button>
+        <button onclick="stop_audio()" id="stop-button" class="stop-button">Parar Reprodução</button>
+    </div>
+  </section>
+
+  <script src="../JS/cardapio.js"></script>
+
+</body>
+</html>

@@ -26,7 +26,19 @@ window.onload = function() {
     if (referrer.includes('contato.html')) {
       // Rola suavemente para a seção desejada
       document.querySelector('.main-content').scrollIntoView({ behavior: 'smooth' });
-    } else {
+    } 
+    
+    else if (referrer.includes('cardapio.html')) {
+      document.querySelector('.projetos').scrollIntoView({ behavior: 'smooth' });
+    }
+    else if (referrer.includes('mobilidade.html')) {
+      document.querySelector('.projetos').scrollIntoView({ behavior: 'smooth' });
+    }
+    else if (referrer.includes('esporte.html')) {
+      document.querySelector('.projetos').scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    else {
       // Comportamento padrão da home
       document.body.style.overflow = 'hidden';
       document.querySelector('.hero').scrollIntoView({ behavior: 'smooth' });
