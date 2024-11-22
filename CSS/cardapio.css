@@ -21,27 +21,33 @@ body {
     background-color: rgb(31, 31, 31);
   }
   
-  .back-button {
-    padding: 10px 20px;
-    font-size: 16px;
+  #btnLink {
+    width: 100px;
+    background-color: #1f2833; /* Botão destacado */
     color: #fff;
-    background-color: #333;
     border: none;
-    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
     cursor: pointer;
+    margin-top: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
 
-  .dark-mode .back-button {
-    background-color: #fafae7;
-    color: #333;
+  .dark-mode #btnLink {
+    background-color: #f0f5f9;
+    color: black;
   }
   
-  .back-button:hover {
-    background-color: #555;
+  #btnLink:hover {
+    background-color: #6d1414;
+    transform: scale(1.05);
   }
 
-  .dark-mode .back-button:hover{
-    background-color: #fafae7b8;
+  .dark-mode #btnLink:hover {
+    background-color: #14405a;
+    color: #f0f5f9;
   }
   
   /* Seção do artigo */

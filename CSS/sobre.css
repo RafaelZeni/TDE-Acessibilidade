@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.dark-mode {
+    background-color: black;
+}
+
+
+/* Botão para voltar à home */
+#btnLink {
+    width: 100px;
+    margin-bottom: 40px;
+    background-color: #1f2833; /* Botão destacado */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .dark-mode #btnLink {
+    background-color: #f0f5f9;
+    color: black;
+  }
+  
+  #btnLink:hover {
+    background-color: #6d1414;
+    transform: scale(1.05);
+  }
+
+  .dark-mode #btnLink:hover {
+    background-color: #14405a;
+    color: #f0f5f9;
+  }
+
+/* Estilo para o conteúdo da página */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 1200px;
+    margin-top: -30px;
+    padding: 20px;
+    gap: 30px;
+}
+
+.dark-mode .content-container {
+    background-color: black;
+}
+
+.logo-container {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    flex: 2;
+    padding: 20px;
+    text-align: justify;
+}
+
+.logo-container img {
+    max-width: 350px; /* Aumentando o tamanho da logo */
+}
+
+.text-container h2 {
+    font-size: 32px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    font-weight: bold
+}
+
+.dark-mode .text-container h2 {
+    color: #f4f4f4;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #555;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.dark-mode .text-container p {
+    font-size: 18px;
+    color: #f0f5f9;
+}
+
+
+
+.button-container {
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  .audio-button {
+    padding: 10px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+
+  .stop-button {
+    padding: 10px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .audio-button:hover {
+    background-color: #0056b3;
+  }
+
+  .stop-button:hover {
+    background-color: #b30000;
+  }
+
+
+  .dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 1000;
+    
+  }
+  
+  .dark-mode-toggle:hover {
+    transform: scale(1.1);
+  }

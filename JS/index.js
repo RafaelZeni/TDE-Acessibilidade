@@ -27,7 +27,9 @@ window.onload = function() {
       // Rola suavemente para a seção desejada
       document.querySelector('.main-content').scrollIntoView({ behavior: 'smooth' });
     } 
-    
+    else if (referrer.includes('sobrenos.html')) {
+      document.querySelector('.main-content').scrollIntoView({ behavior: 'smooth' });
+    }
     else if (referrer.includes('cardapio.html')) {
       document.querySelector('.projetos').scrollIntoView({ behavior: 'smooth' });
     }
