@@ -1,4 +1,3 @@
-  /* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fafae7; /* Fundo escuro elegante */
+  background-color: #fafae7; 
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -70,21 +69,11 @@ body {
   color: black;
 }
 
-/* Main Content Section */
-/* Manter seção main-content ocupando o tamanho da tela inteira */
-
-
-/* Garantir espaçamento e centralização dos elementos internos */
-
-
-
-/* Navbar */
-
 nav {
   display: flex;
   justify-content: center;
   padding: 20px 0;
-  background-color: transparent; /* Torna o menu parte do fundo inicial */
+  background-color: transparent; 
 }
 
 .nav-menu li {
@@ -147,7 +136,7 @@ p {
 }
 
 button {
-  background-color: #1f2833; /* Botão destacado */
+  background-color: #1f2833; 
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -176,7 +165,7 @@ button:hover {
 .main-content {
   text-align: center;
   padding: 20px;
-  min-height: 100vh; /* Garante que a altura seja sempre total */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,7 +237,7 @@ button:hover {
 
 
 .projetos {
-  background-color: #f5f5dc; /* Tons claros para destacar conteúdo */
+  background-color: #f5f5dc; 
   padding: 50px 0;
   text-align: center;
 }
@@ -272,9 +261,9 @@ button:hover {
 .projetos-container {
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  gap: 20px; /* Espaçamento entre as imagens */
-  flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
   margin-top: 20px;
 }
 
@@ -327,7 +316,6 @@ body.dark-mode {
   color: #ffffff;
 }
 
-/* Ícone de alternância para o Modo Escuro */
 .dark-mode-toggle {
   position: fixed;
   top: 20px;
