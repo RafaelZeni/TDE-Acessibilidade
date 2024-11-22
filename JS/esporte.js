@@ -74,6 +74,7 @@ function toggleDarkMode() {
 
     // Trocar as imagens nos projetos
     const iconemodoclaro = document.getElementById('icone-modo-claro');
+    const logo = document.getElementById('logo-img');
 
     if (isDarkMode) {
       iconemodoclaro.src = '../IMGS/Luaclara.svg';
